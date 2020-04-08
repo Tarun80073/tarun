@@ -46,8 +46,7 @@ main()
 			printf("\t\t\t%d\n",CurT-bsT[Proc_no]-arT[Proc_no]);
 			wait+=CurT-arT[Proc_no]-bsT[Proc_no]; 
 			tut+=CurT-arT[Proc_no]; 
-			indicator=0; 
-                       
+			indicator=0;        
 		} 
 		if(Proc_no==no-1){
 			x++;
@@ -68,15 +67,10 @@ main()
 			Proc_no=0;
 		}
 	}
-	
 	rr(no,remt,CurT,arT,bsT);
-	
 	return 0;
 }
-
-
 void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]){
-	
 	float avg_wait,avg_tut;
     int i,j,n=no,temp,btime[20],Proc_no[20],w_time[20],tut_t[20],total=0,loc;
     
@@ -105,7 +99,6 @@ void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]){
         Proc_no[i]=Proc_no[loc];
         Proc_no[loc]=temp;
     }
-	
     for(i=1;i<n;i++)
     {
         for(j=0;j<i;j++){
@@ -113,7 +106,6 @@ void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]){
         }
         total+=w_time[i];
     }
- 
     avg_wait=(float)total/n;
     total=0;
     printf("\nProcess\t\tBurst time\t\twaiting time\t\tTurnaround Time");
