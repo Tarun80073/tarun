@@ -15,7 +15,7 @@ main()
 	for(Proc_no = 0;Proc_no < no;Proc_no++) 
 	{
 		printf("\nProcess P%d\n",Proc_no+1);
-		printf("Arrival time = "); 
+		printf("Arrivaltime = "); 
 		scanf("%d",&arT[Proc_no]);
 		printf("Burst time = "); 
 		scanf("%d",&bsT[Proc_no]); 
