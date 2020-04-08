@@ -1,8 +1,6 @@
 #include<stdio.h> 
 #include<conio.h>
-
 void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]);
-
 main() 
 {
 	int Proc_no,j,no,CurT,RemProc,indicator,time_quan,wait,tut,arT[10],bsT[10],remt[10],x=1;
@@ -127,7 +125,6 @@ void rr(int no,int remt[10],int Cur_t,int arT[10], int bsT[10]){
     }
     avg_tut=(float)total/n;
     printf("\n\nAverage waiting time = %f",avg_wait);
-    printf("\n Average turnaround time = %f\n",avg_tut);
-	
+    printf("\n Average turnaround time = %f\n",avg_tut);	
 }
 
